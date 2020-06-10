@@ -5,7 +5,7 @@
  *
  * @link http://codex.wordpress.org/oEmbed
  * @link http://oembed.com/ oEmbed Homepage
- * @link https://github.com/WordPress/WordPress/tree/master/wp-includes/class-oembed.php
+ * @link https://github.com/WordPress/WordPress/tree/master/wp-includes/class-wp-oembed.php
  *
  * @package Featured Video Plus
  * @subpackage oEmbed
@@ -16,7 +16,7 @@ class FVP_oEmbed {
 
 	public function __construct() {
 		// Does not extend oEmbed in order to not initialize it a second time.
-		require_once( ABSPATH . '/' . WPINC . '/class-oembed.php' );
+		require_once( ABSPATH . '/' . WPINC . '/class-wp-oembed.php' );
 		$this->oembed = _wp_oembed_get_object();
 
 		add_filter(
